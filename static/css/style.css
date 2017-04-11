@@ -1,3 +1,16 @@
+.row{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.header{
+	background: black;
+	color: white;
+	padding: 20px 50px;
+	text-align: justify;
+    text-justify: inter-word;
+}
+
 .wrapper{
     position: relative;
     overflow: hidden;
@@ -22,6 +35,11 @@
     transform: translate(-50%, -50%);
 }
 
+.text {
+    background-color: transparent;
+}
+
+/* BEGIN BOOK*/
 .book:hover .image {
     opacity: 0.5;
 }
@@ -30,7 +48,7 @@
     opacity: 1;
 }
 
-.book:hover .affect {
+.book:hover .zoom_out {
     transform: scale(1, 1);
 }
 
@@ -38,15 +56,12 @@
     transform: scale(1, 1) rotate(0deg);
 }
 
-.book:hover .gender {
+.book:hover .book-gender {
     transform: rotate(0deg) translate(0px,0px);
 }
 
-.text {
-    background-color: transparent;
-}
-
-.affect{
+.zoom_out{
+    display: block;
     color: #fff;
     transform: scale(5, 5);
     transition: all .5s ease;
@@ -58,11 +73,41 @@
     transition-delay: 0.9s;
 }
 
-.gender{
+.book-gender{
     transform: translate(40px,40px) rotate(-90deg);
     transition-delay: 0.3s;
     transition-duration: 1s;
 }
 
+/* END BOOK*/
 
+/* BEGIN MOVIE*/
+.movie:hover .image {
+    opacity: 0.5;
+}
+
+.movie:hover .middle {
+    opacity: 1;
+}
+
+.movie:hover .zoom_out {
+    transform: scale(1, 1);
+}
+
+.movie:hover .slower {
+    transform: scale(1, 1) rotate(0deg);
+}
+
+.movie:hover .movie-gender {
+    transform: translate(0px, 0px) translate(0px, 0px);
+}
+
+.movie-gender{
+    display: block;
+    color: #fff;
+    transform: scale(5, 5) translate(156px, 40px);
+    transition: all ease;
+    transition-duration: 1s;
+    transition-delay: 0.3s;
+}
 
