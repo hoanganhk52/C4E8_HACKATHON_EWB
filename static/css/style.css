@@ -1,0 +1,68 @@
+.wrapper{
+    position: relative;
+    overflow: hidden;
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    width: 80%;
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.book:hover .image {
+    opacity: 0.5;
+}
+
+.book:hover .middle {
+    opacity: 1;
+}
+
+.book:hover .affect {
+    transform: scale(1, 1);
+}
+
+.book:hover .slower {
+    transform: scale(1, 1) rotate(0deg);
+}
+
+.book:hover .gender {
+    transform: rotate(0deg) translate(0px,0px);
+}
+
+.text {
+    background-color: transparent;
+}
+
+.affect{
+    color: #fff;
+    transform: scale(5, 5);
+    transition: all .5s ease;
+    transition-duration: 1s;
+    transition-delay: 0.3s;
+}
+.slower{
+    transform: scale(0.1, 0.1) rotate(180deg);
+    transition-delay: 0.9s;
+}
+
+.gender{
+    transform: translate(40px,40px) rotate(-90deg);
+    transition-delay: 0.3s;
+    transition-duration: 1s;
+}
+
+
+
